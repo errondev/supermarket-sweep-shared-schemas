@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.BestPriceLocation = exports.SweepStatus = exports.DayOfWeek = void 0;
+exports.SpecialType = exports.BestPriceLocation = exports.SweepStatus = exports.DayOfWeek = void 0;
 var DayOfWeek;
 (function (DayOfWeek) {
     DayOfWeek[DayOfWeek["SUNDAY"] = 0] = "SUNDAY";
@@ -25,4 +25,12 @@ var BestPriceLocation;
     BestPriceLocation["ONLINE"] = "online";
     BestPriceLocation["BOTH"] = "both";
 })(BestPriceLocation || (exports.BestPriceLocation = BestPriceLocation = {}));
+var SpecialType;
+(function (SpecialType) {
+    SpecialType["HALF_PRICE"] = "half_price";
+    SpecialType["DISCOUNTED"] = "discounted";
+    SpecialType["MULTIBUY"] = "multibuy";
+    SpecialType["ONLINE_ONLY"] = "online_only";
+    SpecialType["INSTORE_ONLY"] = "instore_only";
+})(SpecialType || (exports.SpecialType = SpecialType = {}));
 //# sourceMappingURL=enums.js.map

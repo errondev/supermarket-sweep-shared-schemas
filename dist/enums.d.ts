@@ -19,3 +19,10 @@ export declare enum BestPriceLocation {
     ONLINE = "online",
     BOTH = "both"
 }
+export declare enum SpecialType {
+    HALF_PRICE = "half_price",
+    DISCOUNTED = "discounted",
+    MULTIBUY = "multibuy",
+    ONLINE_ONLY = "online_only",
+    INSTORE_ONLY = "instore_only"
+}
