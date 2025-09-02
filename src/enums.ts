@@ -60,3 +60,30 @@ export enum BestPriceLocation {
    */
   BOTH = 'both',
 }
+
+export enum SpecialType {
+  /**
+   * The product is half price.
+   */
+  HALF_PRICE = 'half_price',
+
+  /**
+   * The product is discounted.
+   */
+  DISCOUNTED = 'discounted',
+
+  /**
+   * The product is a multibuy.
+   */
+  MULTIBUY = 'multibuy',
+
+  /**
+   * The product is available online only.
+   */
+  ONLINE_ONLY = 'online_only',
+
+  /**
+   * The product is available in-store only.
+   */
+  INSTORE_ONLY = 'instore_only',
+}
