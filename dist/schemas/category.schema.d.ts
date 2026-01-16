@@ -3,6 +3,7 @@ export declare class StoreMappings {
     w?: string[];
     c?: string[];
     cw?: string[];
+    p?: string[];
 }
 export type StoreMappingsDocument = StoreMappings & Document<StoreMappings>;
 export declare const StoreMappingsSchema: import("mongoose").Schema<StoreMappings, import("mongoose").Model<StoreMappings, any, any, any, Document<unknown, any, StoreMappings, any> & StoreMappings & {

@@ -3,14 +3,21 @@ import { Document } from 'mongoose';
 
 @Schema({ timestamps: false, id: false, _id: false })
 export class StoreMappings {
+  /** Woolworths */
   @Prop()
   w?: string[];
 
+  /** Coles */
   @Prop()
   c?: string[];
 
+  /** Chemist Warehouse */
   @Prop()
   cw?: string[];
+
+  /** Priceline */
+  @Prop()
+  p?: string[];
 }
 
 export type StoreMappingsDocument = StoreMappings & Document<StoreMappings>;
