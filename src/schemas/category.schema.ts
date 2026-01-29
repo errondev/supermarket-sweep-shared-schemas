@@ -18,6 +18,10 @@ export class StoreMappings {
   /** Priceline */
   @Prop()
   p?: string[];
+
+  /** ALDI */
+  @Prop()
+  a?: string[];
 }
 
 export type StoreMappingsDocument = StoreMappings & Document<StoreMappings>;

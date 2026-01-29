@@ -30,6 +30,10 @@ __decorate([
     (0, mongoose_1.Prop)(),
     __metadata("design:type", Array)
 ], StoreMappings.prototype, "p", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", Array)
+], StoreMappings.prototype, "a", void 0);
 exports.StoreMappings = StoreMappings = __decorate([
     (0, mongoose_1.Schema)({ timestamps: false, id: false, _id: false })
 ], StoreMappings);
