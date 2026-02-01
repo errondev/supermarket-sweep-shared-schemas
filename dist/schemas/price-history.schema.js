@@ -27,7 +27,7 @@ __decorate([
     __metadata("design:type", Number)
 ], PriceHistory.prototype, "price", void 0);
 exports.PriceHistory = PriceHistory = __decorate([
-    (0, mongoose_1.Schema)({ timestamps: true })
+    (0, mongoose_1.Schema)({ timestamps: false })
 ], PriceHistory);
 exports.PriceHistorySchema = mongoose_1.SchemaFactory.createForClass(PriceHistory);
 exports.PriceHistorySchema.index({ productCode: 1, sweepDate: 1 }, { unique: true });
