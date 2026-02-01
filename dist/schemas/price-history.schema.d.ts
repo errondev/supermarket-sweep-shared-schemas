@@ -1,11 +1,8 @@
 import { Document } from 'mongoose';
-import { Price } from './price.schema';
 export declare class PriceHistory {
-    storeCode: string;
     productCode: string;
-    price: Price;
-    createdAt: Date;
-    updatedAt: Date;
+    sweepDate: Date;
+    price: number;
 }
 export type PriceHistoryDocument = PriceHistory & Document<PriceHistory>;
 export declare const PriceHistorySchema: import("mongoose").Schema<PriceHistory, import("mongoose").Model<PriceHistory, any, any, any, Document<unknown, any, PriceHistory, any> & PriceHistory & {

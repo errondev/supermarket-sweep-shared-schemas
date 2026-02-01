@@ -11,33 +11,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PriceHistorySchema = exports.PriceHistory = void 0;
 const mongoose_1 = require("@nestjs/mongoose");
-const price_schema_1 = require("./price.schema");
 let PriceHistory = class PriceHistory {
 };
 exports.PriceHistory = PriceHistory;
 __decorate([
     (0, mongoose_1.Prop)({ required: true }),
     __metadata("design:type", String)
-], PriceHistory.prototype, "storeCode", void 0);
-__decorate([
-    (0, mongoose_1.Prop)({ required: true }),
-    __metadata("design:type", String)
 ], PriceHistory.prototype, "productCode", void 0);
 __decorate([
-    (0, mongoose_1.Prop)({ type: price_schema_1.PriceSchema, required: true }),
-    __metadata("design:type", price_schema_1.Price)
+    (0, mongoose_1.Prop)({ required: true }),
+    __metadata("design:type", Date)
+], PriceHistory.prototype, "sweepDate", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ required: true }),
+    __metadata("design:type", Number)
 ], PriceHistory.prototype, "price", void 0);
-__decorate([
-    (0, mongoose_1.Prop)(),
-    __metadata("design:type", Date)
-], PriceHistory.prototype, "createdAt", void 0);
-__decorate([
-    (0, mongoose_1.Prop)(),
-    __metadata("design:type", Date)
-], PriceHistory.prototype, "updatedAt", void 0);
 exports.PriceHistory = PriceHistory = __decorate([
     (0, mongoose_1.Schema)({ timestamps: true })
 ], PriceHistory);
 exports.PriceHistorySchema = mongoose_1.SchemaFactory.createForClass(PriceHistory);
-exports.PriceHistorySchema.index({ 'price.sweepId': 1, productCode: 1 }, { unique: true });
+exports.PriceHistorySchema.index({ productCode: 1, sweepDate: 1 }, { unique: true });
+exports.PriceHistorySchema.index({ sweepDate: 1 });
 //# sourceMappingURL=price-history.schema.js.map
